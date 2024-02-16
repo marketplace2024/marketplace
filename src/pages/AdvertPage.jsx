@@ -1,9 +1,10 @@
 import { Advert } from '../components/Advert';
+import { Title } from '../components/Title';
 
 const AdvertPage = () => {
   return (
     <>
-      <h2>My Advertisements</h2>
+      <Title name={'My Advertisements'} />
       <Advert />
     </>
   );
