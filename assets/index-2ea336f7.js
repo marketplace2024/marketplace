@@ -172,9 +172,21 @@ Error generating stack: `+i.message+`
     /* color: ${({theme:e})=>e.colors.black}; */
     font-weight: 600;
   }
-`,NE=()=>$.jsx($.Fragment,{children:$.jsxs(OE,{children:[$.jsx(Za,{children:$.jsx(eu,{to:"/home",children:"Home"})}),$.jsx(Za,{children:$.jsx(eu,{to:"/shop",children:"My shopping"})}),$.jsx(Za,{children:$.jsx(eu,{to:"/advert",children:"My Advertisements"})})]})}),zE=()=>$.jsxs($.Fragment,{children:[$.jsx(uS,{}),$.jsx(NE,{}),$.jsx(x.Suspense,{fallback:null,children:$.jsx(mh,{})})]});const ME=sS`
+`,NE=()=>$.jsx($.Fragment,{children:$.jsxs(OE,{children:[$.jsx(Za,{children:$.jsx(eu,{to:"/home",children:"Home"})}),$.jsx(Za,{children:$.jsx(eu,{to:"/shop",children:"My shopping"})}),$.jsx(Za,{children:$.jsx(eu,{to:"/advert",children:"My Advertisements"})})]})}),zE=()=>$.jsxs($.Fragment,{children:[$.jsx(uS,{}),$.jsx(NE,{}),$.jsx(x.Suspense,{fallback:null,children:$.jsx(mh,{})})]});const ME="/marketplace/assets/Inter-cf3cb43b.ttf",LE="/marketplace/assets/Montserrat-e5b1a3fb.ttf",AE=sS`
+
+@font-face {
+    font-family: 'Inter';
+    src: url(${ME});
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    src: url(${LE});
+  }
+
 
 body {
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #121417;
@@ -206,14 +218,14 @@ button {
   cursor: pointer;
 }
 
-`,LE={colors:{black:"#121417",grey400:"#8688A9",white:"#fff"}},AE=({children:e})=>$.jsx(oS,{theme:LE,children:e}),jE=tt.div`
+`,jE={colors:{black:"#121417",grey400:"#8688A9",white:"#fff"}},FE=({children:e})=>$.jsx(oS,{theme:jE,children:e}),BE=tt.div`
   max-width: 1440px;
   padding: 0 201px;
   margin: 0 auto;
-`,FE=({children:e})=>$.jsx(jE,{children:e}),BE=tt.h2`
+`,DE=({children:e})=>$.jsx(BE,{children:e}),UE=tt.h2`
   font-size: 24px;
   margin: 60px 0 32px;
-`,Ff=({name:e})=>$.jsx(BE,{children:e}),DE=()=>$.jsx($.Fragment,{children:$.jsx(Ff,{name:"Home"})}),_g=x.createContext(null);function UE(){const[e,t]=x.useState(null);return x.useEffect(()=>{t(`mui-p-${Math.round(Math.random()*1e5)}`)},[]),e}function WE(e){const{children:t,value:n}=e,r=UE(),o=x.useMemo(()=>({idPrefix:r,value:n}),[r,n]);return $.jsx(_g.Provider,{value:o,children:t})}function VE(){return x.useContext(_g)}function HE(e,t){const{idPrefix:n}=e;return n===null?null:`${e.idPrefix}-P-${t}`}function KE(e,t){const{idPrefix:n}=e;return n===null?null:`${e.idPrefix}-T-${t}`}const GE=["children"],YE=x.forwardRef(function(t,n){const{children:r}=t,o=pe(t,GE),i=VE();if(i===null)throw new TypeError("No TabContext provided");const l=x.Children.map(r,s=>x.isValidElement(s)?x.cloneElement(s,{"aria-controls":HE(i,s.props.value),id:KE(i,s.props.value)}):null);return $.jsx(IE,P({},o,{ref:n,value:i.value,children:l}))}),QE=YE,XE=["active","awaiting","delivery","inactive","declined"],ZE=()=>{const[e,t]=x.useState(XE[0]),n=dh(),r=(o,i)=>{console.log(i),t(i),n(`/advert/${i}`)};return $.jsxs($.Fragment,{children:[$.jsx(WE,{value:e,children:$.jsx(Ek,{sx:{borderBottom:1,borderColor:"divider"},children:$.jsxs(QE,{onChange:r,"aria-label":"My Advertisements navigation",children:[$.jsx(No,{label:"Active",value:"active"}),$.jsx(No,{label:"Awaiting publications",value:"awaiting"}),$.jsx(No,{label:"On delivery",value:"delivery"}),$.jsx(No,{label:"Inactive",value:"inactive"}),$.jsx(No,{label:"Declined",value:"declined"})]})})}),$.jsx(mh,{})]})},JE=()=>$.jsxs($.Fragment,{children:[$.jsx(Ff,{name:"My Advertisements"}),$.jsx(ZE,{})]}),qE=()=>$.jsx($.Fragment,{children:$.jsx(Ff,{name:"ShopPage"})}),e$=tt.div`
+`,Ff=({name:e})=>$.jsx(UE,{children:e}),WE=()=>$.jsx($.Fragment,{children:$.jsx(Ff,{name:"Home"})}),_g=x.createContext(null);function VE(){const[e,t]=x.useState(null);return x.useEffect(()=>{t(`mui-p-${Math.round(Math.random()*1e5)}`)},[]),e}function HE(e){const{children:t,value:n}=e,r=VE(),o=x.useMemo(()=>({idPrefix:r,value:n}),[r,n]);return $.jsx(_g.Provider,{value:o,children:t})}function KE(){return x.useContext(_g)}function GE(e,t){const{idPrefix:n}=e;return n===null?null:`${e.idPrefix}-P-${t}`}function YE(e,t){const{idPrefix:n}=e;return n===null?null:`${e.idPrefix}-T-${t}`}const QE=["children"],XE=x.forwardRef(function(t,n){const{children:r}=t,o=pe(t,QE),i=KE();if(i===null)throw new TypeError("No TabContext provided");const l=x.Children.map(r,s=>x.isValidElement(s)?x.cloneElement(s,{"aria-controls":GE(i,s.props.value),id:YE(i,s.props.value)}):null);return $.jsx(IE,P({},o,{ref:n,value:i.value,children:l}))}),ZE=XE,JE=["active","awaiting","delivery","inactive","declined"],qE=()=>{const[e,t]=x.useState(JE[0]),n=dh(),r=(o,i)=>{console.log(i),t(i),n(`/advert/${i}`)};return $.jsxs($.Fragment,{children:[$.jsx(HE,{value:e,children:$.jsx(Ek,{sx:{borderBottom:1,borderColor:"divider"},children:$.jsxs(ZE,{onChange:r,"aria-label":"My Advertisements navigation",children:[$.jsx(No,{label:"Active",value:"active"}),$.jsx(No,{label:"Awaiting publications",value:"awaiting"}),$.jsx(No,{label:"On delivery",value:"delivery"}),$.jsx(No,{label:"Inactive",value:"inactive"}),$.jsx(No,{label:"Declined",value:"declined"})]})})}),$.jsx(mh,{})]})},e$=()=>$.jsxs($.Fragment,{children:[$.jsx(Ff,{name:"My Advertisements"}),$.jsx(qE,{})]}),t$=()=>$.jsx($.Fragment,{children:$.jsx(Ff,{name:"ShopPage"})}),n$=tt.div`
   height: 200px;
   border: 1px solid lightgray;
   border-top: none;
@@ -221,18 +233,18 @@ button {
 
   display: flex;
   gap: 26px;
-`,t$=tt.div`
+`,r$=tt.div`
   width: 178px;
-`,n$=tt.img`
+`,o$=tt.img`
   object-fit: cover;
   margin-bottom: 16px;
-`,r$=tt.p`
+`,i$=tt.p`
   font-size: 12px;
   text-align: center;
-`,o$=tt.div`
+`,l$=tt.div`
   width: 386px;
   padding-top: 8px;
-`,i$=tt.p`
+`,s$=tt.p`
   font-size: 14px;
   line-height: 1.6;
 `,Kp=tt.p`
@@ -242,15 +254,15 @@ button {
   margin: 10px 0;
 `,Gp=tt.p`
   font-size: 12px;
-`,l$=tt.div`
+`,a$=tt.div`
   display: flex;
   align-items: center;
   gap: 10px;
 
   margin-top: 13px;
-`,s$="/marketplace/assets/no_img-8d923bfe.jpeg",tu=()=>$.jsx($.Fragment,{children:$.jsxs(e$,{children:[$.jsxs(t$,{children:[$.jsx(n$,{src:s$,alt:"Card image",width:178,height:152}),$.jsx(r$,{children:"ID 123123123"})]}),$.jsxs(o$,{children:[$.jsx(i$,{children:"Quidem optio sint magnam necessitatibus enim est autem quia"}),$.jsx(Kp,{children:"Category"}),$.jsx(Kp,{children:"Location"}),$.jsx(Gp,{children:"Earum nihil eligendi a possimus. Vero dignissimos amet sequi debitis dolor. Est iure quae sit vel est laudantium eum placeat dolores. Repell"}),$.jsxs(l$,{children:[$.jsx(Gp,{children:"Rating"}),$.jsx(qk,{name:"read-only",value:"",readOnly:!0})]})]})]})}),a$=tt.ul`
+`,u$="/marketplace/assets/no_img-8d923bfe.jpeg",tu=()=>$.jsx($.Fragment,{children:$.jsxs(n$,{children:[$.jsxs(r$,{children:[$.jsx(o$,{src:u$,alt:"Card image",width:178,height:152}),$.jsx(i$,{children:"ID 123123123"})]}),$.jsxs(l$,{children:[$.jsx(s$,{children:"Quidem optio sint magnam necessitatibus enim est autem quia"}),$.jsx(Kp,{children:"Category"}),$.jsx(Kp,{children:"Location"}),$.jsx(Gp,{children:"Earum nihil eligendi a possimus. Vero dignissimos amet sequi debitis dolor. Est iure quae sit vel est laudantium eum placeat dolores. Repell"}),$.jsxs(a$,{children:[$.jsx(Gp,{children:"Rating"}),$.jsx(qk,{name:"read-only",value:"",readOnly:!0})]})]})]})}),c$=tt.ul`
   margin: 30px 0;
   display: flex;
   flex-direction: column;
   gap: 20px;
-`,u$=()=>$.jsxs(a$,{children:[$.jsx("li",{children:$.jsx(tu,{})}),$.jsx("li",{children:$.jsx(tu,{})}),$.jsx("li",{children:$.jsx(tu,{})})]});function c$(){return $.jsx(AE,{children:$.jsxs(FE,{children:[$.jsx(Uy,{children:$.jsxs(Zt,{path:"/",element:$.jsx(zE,{}),children:[$.jsx(Zt,{path:"/home",element:$.jsx(DE,{})}),$.jsx(Zt,{path:"/shop",element:$.jsx(qE,{})}),$.jsxs(Zt,{path:"/advert",element:$.jsx(JE,{}),children:[$.jsx(Zt,{path:"active",element:$.jsx(u$,{})}),$.jsx(Zt,{path:"awaiting",element:"awaiting"}),$.jsx(Zt,{path:"delivery",element:"delivery"}),$.jsx(Zt,{path:"inactive",element:"inactive"}),$.jsx(Zt,{path:"declined",element:"declined"})]})]})}),$.jsx(ME,{})]})})}ou.createRoot(document.getElementById("root")).render($.jsx(Le.StrictMode,{children:$.jsx(Yy,{basename:"/marketplace/",children:$.jsx(c$,{})})}));
+`,f$=()=>$.jsxs(c$,{children:[$.jsx("li",{children:$.jsx(tu,{})}),$.jsx("li",{children:$.jsx(tu,{})}),$.jsx("li",{children:$.jsx(tu,{})})]});function d$(){return $.jsx(FE,{children:$.jsxs(DE,{children:[$.jsx(Uy,{children:$.jsxs(Zt,{path:"/",element:$.jsx(zE,{}),children:[$.jsx(Zt,{path:"/home",element:$.jsx(WE,{})}),$.jsx(Zt,{path:"/shop",element:$.jsx(t$,{})}),$.jsxs(Zt,{path:"/advert",element:$.jsx(e$,{}),children:[$.jsx(Zt,{path:"active",element:$.jsx(f$,{})}),$.jsx(Zt,{path:"awaiting",element:"awaiting"}),$.jsx(Zt,{path:"delivery",element:"delivery"}),$.jsx(Zt,{path:"inactive",element:"inactive"}),$.jsx(Zt,{path:"declined",element:"declined"})]})]})}),$.jsx(AE,{})]})})}ou.createRoot(document.getElementById("root")).render($.jsx(Le.StrictMode,{children:$.jsx(Yy,{basename:"/marketplace/",children:$.jsx(d$,{})})}));
