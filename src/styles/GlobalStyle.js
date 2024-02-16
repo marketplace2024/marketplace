@@ -1,9 +1,23 @@
 import { createGlobalStyle } from 'styled-components';
 import 'modern-normalize';
+import Inter from '../assets/fonts/Inter.ttf';
+import Montserrat from '../assets/fonts/Montserrat.ttf';
 
 const GlobalStyle = createGlobalStyle`
 
+@font-face {
+    font-family: 'Inter';
+    src: url(${Inter});
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    src: url(${Montserrat});
+  }
+
+
 body {
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #121417;
