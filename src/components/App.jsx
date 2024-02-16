@@ -6,6 +6,7 @@ import { Container } from './Container';
 import HomePage from 'pages/HomePage';
 import AdvertPage from 'pages/AdvertPage';
 import ShopPage from 'pages/ShopPage';
+import { CardList } from './Advert/CardList';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
             <Route path="/home" element={<HomePage />} />
             <Route path="/shop" element={<ShopPage />} />
             <Route path="/advert" element={<AdvertPage />}>
-              <Route path="active" element={'active'} />
+              <Route path="active" element={<CardList />} />
               <Route path="awaiting" element={'awaiting'} />
               <Route path="delivery" element={'delivery'} />
               <Route path="inactive" element={'inactive'} />
