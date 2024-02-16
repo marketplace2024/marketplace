@@ -1,13 +1,20 @@
-import { Link } from 'react-router-dom';
+import { Button } from '@mui/material';
+import { Nav, NavLinkStyled } from './UserMenu.styled';
 
 export const UserMenu = () => {
   return (
     <>
-      <ul>
-        <Link to={'/home'}>Home</Link>
-        <Link to={'/shop'}>My shopping</Link>
-        <Link to={'/advert'}>My Advertisements</Link>
-      </ul>
+      <Nav>
+        <Button>
+          <NavLinkStyled to={'/home'}>Home</NavLinkStyled>
+        </Button>
+        <Button>
+          <NavLinkStyled to={'/shop'}>My shopping</NavLinkStyled>
+        </Button>
+        <Button>
+          <NavLinkStyled to={'/advert'}>My Advertisements</NavLinkStyled>
+        </Button>
+      </Nav>
     </>
   );
 };
