@@ -1,10 +1,9 @@
-import { Button } from '@mui/material';
+import { Title } from '../components/Title';
 
 const HomePage = () => {
   return (
     <>
-      <h2>Home</h2>
-      <Button>Example</Button>
+      <Title name={'Home'} />
     </>
   );
 };

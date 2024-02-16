@@ -1,7 +1,9 @@
+import { Title } from '../components/Title';
+
 const ShopPage = () => {
   return (
     <>
-      <h2>ShopPage</h2>
+      <Title name={'ShopPage'} />
     </>
   );
 };
