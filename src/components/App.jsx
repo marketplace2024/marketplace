@@ -1,9 +1,11 @@
 import { Route, Routes } from 'react-router-dom';
 import { Layout } from 'components/Layout';
-import Home from 'pages/Home';
 import { GlobalStyle, Theme } from '../styles';
 import { Container } from './Container';
-import { Advertisements } from 'pages/Advertisements';
+
+import HomePage from 'pages/HomePage';
+import AdvertPage from 'pages/AdvertPage';
+import ShopPage from 'pages/ShopPage';
 
 function App() {
   return (
@@ -11,8 +13,9 @@ function App() {
       <Container>
         <Routes>
           <Route path="/" element={<Layout />}>
-            {/* <Route path="/home" element={<Home />} /> */}
-            <Route path="/advertisements" element={<Advertisements />}>
+            <Route path="/home" element={<HomePage />} />
+            <Route path="/shop" element={<ShopPage />} />
+            <Route path="/advert" element={<AdvertPage />}>
               <Route path="active" element={'active'} />
               <Route path="awaiting" element={'awaiting'} />
               <Route path="delivery" element={'delivery'} />

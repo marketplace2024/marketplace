@@ -1,6 +1,6 @@
 import { Button } from '@mui/material';
 
-const Home = () => {
+const HomePage = () => {
   return (
     <>
       <h2>Home</h2>
@@ -9,4 +9,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;

@@ -5,22 +5,21 @@ import TabContext from '@mui/lab/TabContext';
 import { Box } from '@mui/material';
 // import { TabPanel } from '@mui/lab';
 import { useState } from 'react';
-import { Link, Outlet, useNavigate } from 'react-router-dom';
+import { Outlet, useNavigate } from 'react-router-dom';
 
 const menu = ['active', 'awaiting', 'delivery', 'inactive', 'declined'];
 
-export const MyAdvertisements = () => {
+export const Advert = () => {
   const [value, setValue] = useState(menu[0]);
   const navigate = useNavigate();
 
   const handleChange = (event, newValue) => {
     console.log(newValue);
     setValue(newValue);
-    navigate(`/advertisements/${newValue}`);
+    navigate(`/advert/${newValue}`);
   };
   return (
     <>
-      <h2>My Advertisements</h2>
       <TabContext value={value}>
         <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
           <TabList
