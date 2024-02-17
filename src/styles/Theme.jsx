@@ -34,6 +34,7 @@ const theme = {
       100: '#FFECB3',
       50: '#FFF8E1'
     },
+
   },
   typography: {
     fontFamily: 'Montserrat',
