@@ -1,5 +1,8 @@
-import styled from 'styled-components';
+import { styled } from '@mui/material/styles';
 
-export const Title = styled.div`
-  color: ${({ theme }) => theme.colors.grey};
-`;
+
+export const AppBar = styled('div')(({ theme }) => ({
+  backgroundColor: theme.palette.grey[900],
+  width: '100%',
+  borderRadius: theme.shape.borderRadius,
+}));
