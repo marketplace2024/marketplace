@@ -1,5 +1,5 @@
 
-import { styled} from '@mui/material/styles';
+import { styled } from '@mui/material/styles';
 import InputBase from '@mui/material/InputBase';
 
 
@@ -7,10 +7,10 @@ import InputBase from '@mui/material/InputBase';
 export const Search = styled('div')(({ theme }) => ({
   position: 'relative',
   borderRadius: theme.shape.borderRadius,
-  backgroundColor: theme.palette.grey[100],
+  backgroundColor: theme.palette.grey[200],
   marginRight: theme.spacing(2),
   marginLeft: 0,
-  width: '90%',
+  width: '100%',
   [theme.breakpoints.up('sm')]: {
     marginLeft: theme.spacing(3),
     width: 'auto',

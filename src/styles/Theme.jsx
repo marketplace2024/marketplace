@@ -5,6 +5,11 @@ import { ThemeProvider } from 'styled-components';
 // `;
 
 const theme = {
+  colors: {
+    black: '#2B2D42',
+    grey400: '#8688A9'
+  },
+
   palette: {
     primary: {
       main: '#2B2D42',
@@ -34,6 +39,7 @@ const theme = {
       100: '#FFECB3',
       50: '#FFF8E1'
     },
+
   },
   typography: {
     fontFamily: 'Montserrat',

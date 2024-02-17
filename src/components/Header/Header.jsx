@@ -15,7 +15,6 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
 
 
-
 export const Header = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
@@ -36,7 +35,7 @@ export const Header = () => {
     handleMobileMenuClose();
   };
 
- 
+
 
   ////////////////////////
   //Desktop version start
@@ -124,7 +123,7 @@ export const Header = () => {
 
 
   return (
-    <Box sx={{ flexGrow: 1 }} >
+    <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
     
         <Toolbar>
