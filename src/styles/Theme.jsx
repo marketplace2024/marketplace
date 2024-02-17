@@ -5,9 +5,14 @@ import { ThemeProvider } from 'styled-components';
 // `;
 
 const theme = {
+  colors: {
+    black: '#2B2D42',
+    grey400: '#8688A9'
+  },
+
   palette: {
     primary: {
-      background: '#FFFFFF',
+      main: '#2B2D42',
       error: '#B00020'
     },
     grey: {
@@ -23,7 +28,7 @@ const theme = {
       50: '#EFECFF'
     },
     orange: {
-      main: '#FF6F00',
+      900: '#FF6F00',
       800: '#FF8F00',
       700: '#FFA000',
       600: '#FFB300',
