@@ -1,8 +1,8 @@
+import SearchIcon from '@mui/icons-material/Search';
+import Box from '@mui/material/Box';
 import { Search } from './SearchBox.styled';
 import { SearchIconWrapper } from './SearchBox.styled';
 import { StyledInputBase } from './SearchBox.styled';
-import SearchIcon from '@mui/icons-material/Search';
-import Box from '@mui/material/Box';
 
 
 export const SearchBox = () => {
@@ -13,7 +13,7 @@ export const SearchBox = () => {
               <SearchIcon />
             </SearchIconWrapper>
             <StyledInputBase
-              placeholder="Search…"
+              placeholder="I'm looking for..."
               inputProps={{ 'aria-label': 'search' }}
             />
           </Search>

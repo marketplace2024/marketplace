@@ -7,7 +7,8 @@ import { ThemeProvider } from 'styled-components';
 const theme = {
   colors: {
     black: '#2B2D42',
-    grey400: '#8688A9'
+    grey400: '#8688A9',
+    grey900: '#2B2D42',
   },
 
   palette: {
@@ -15,6 +16,7 @@ const theme = {
       main: '#2B2D42',
       error: '#B00020'
     },
+
     grey: {
       900: '#2B2D42',
       800: '#3F415A',
