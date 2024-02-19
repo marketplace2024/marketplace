@@ -2,9 +2,8 @@ import styled from 'styled-components';
 
 export const Wrap = styled.div`
   height: 200px;
-  border: 1px solid lightgray;
   border-top: none;
-  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 1px 0 #d1d5eb;
 
   display: flex;
   gap: 26px;
@@ -26,29 +25,46 @@ export const Text = styled.p`
 
 export const WrapTitle = styled.div`
   width: 386px;
-  padding-top: 8px;
+  height: 152px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 15px;
 `;
 
 export const TextTitle = styled.p`
   font-size: 14px;
-  line-height: 1.6;
+  line-height: calc(17 / 14);
 `;
 
-export const TextEl = styled.p`
+export const TextElem = styled.p`
   font-size: 10px;
   color: ${({ theme }) => theme.colors.grey400};
+`;
 
-  margin: 10px 0;
+export const TextValue = styled.span`
+  margin-left: 10px;
+  color: ${({ theme }) => theme.colors.black};
 `;
 
 export const TextItem = styled.p`
   font-size: 12px;
+  line-height: calc(15 / 12);
+  height: 30px;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 `;
 
-export const WrapRating = styled.div`
+export const WrapStatic = styled.div`
   display: flex;
   align-items: center;
-  gap: 10px;
+  justify-content: space-between;
+`;
 
-  margin-top: 13px;
+export const Block = styled.div`
+  display: flex;
+  gap: 10px;
 `;
