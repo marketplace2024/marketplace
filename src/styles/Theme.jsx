@@ -16,7 +16,6 @@ const theme = {
       main: '#2B2D42',
       error: '#B00020'
     },
-
     grey: {
       900: '#2B2D42',
       800: '#3F415A',

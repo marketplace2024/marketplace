@@ -8,6 +8,7 @@ import AdvertPage from 'pages/AdvertPage';
 import ShopPage from 'pages/ShopPage';
 import { CardList } from './Advert/CardList';
 
+
 function App() {
   return (
     <Theme>
@@ -25,6 +26,7 @@ function App() {
             </Route>
             {/* <Route path="*" element={} /> */}
           </Route>
+         
         </Routes>
         <GlobalStyle />
       </Container>
