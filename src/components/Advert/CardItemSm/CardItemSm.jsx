@@ -1,13 +1,20 @@
-import { Rating } from '@mui/material';
+import { Button, Rating } from '@mui/material';
 import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
+import EditIcon from '@mui/icons-material/Edit';
 import {
   Block,
+  BlokBtn,
   Img,
+  RatingItem,
   Text,
   TextElem,
   TextItem,
   TextTitle,
   TextValue,
+  Values,
+  ValuesItem,
+  ValuesTitle,
+  ValuesWrp,
   Wrap,
   WrapImg,
   WrapStatic,
@@ -46,7 +53,7 @@ export const CardItemSm = () => {
           </WrapTitle>
           <WrapStatic>
             <Block>
-              <TextItem>Rating</TextItem>
+              <RatingItem>Rating</RatingItem>
               <Rating
                 name="simple-controlled"
                 value={value}
@@ -58,15 +65,42 @@ export const CardItemSm = () => {
               />
             </Block>
             <Block>
-              <TextItem>Comments</TextItem>
-              <TextItem>12345</TextItem>
+              <RatingItem>Comments</RatingItem>
+              <RatingItem>12345</RatingItem>
             </Block>
             <Block>
               <ChatBubbleOutlineIcon fontSize="small" />
-              <TextItem>1045</TextItem>
+              <RatingItem>1045</RatingItem>
             </Block>
           </WrapStatic>
         </div>
+        <ValuesWrp>
+          <Values>
+            <div>
+              <ValuesTitle>Price</ValuesTitle>
+              <ValuesItem>1335460 грн</ValuesItem>
+            </div>
+            <div>
+              <ValuesTitle>Quantity</ValuesTitle>
+              <ValuesItem>153</ValuesItem>
+            </div>
+            <div>
+              <ValuesTitle>Period of publication</ValuesTitle>
+              <ValuesItem>01.01.2024-01.03.2024</ValuesItem>
+            </div>
+          </Values>
+          <BlokBtn>
+            <Button size="small" variant="outlined">
+              Deactivate
+            </Button>
+            <Button size="small" variant="outlined">
+              Delete
+            </Button>
+            <Button size="small" variant="outlined" startIcon={<EditIcon />}>
+              Edit
+            </Button>
+          </BlokBtn>
+        </ValuesWrp>
       </Wrap>
     </>
   );
