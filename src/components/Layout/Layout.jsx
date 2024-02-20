@@ -5,6 +5,8 @@ import { UserMenu } from '../UserMenu';
 import { SearchBox } from '../Search/SearchBox';
 
 
+
+
 export const Layout = () => {
   return (
     <>
@@ -14,6 +16,7 @@ export const Layout = () => {
       <Suspense fallback={null}>
         <Outlet />
       </Suspense>
+  
     </>
   );
 };
