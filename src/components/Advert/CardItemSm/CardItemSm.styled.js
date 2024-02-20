@@ -6,11 +6,12 @@ export const Wrap = styled.div`
   box-shadow: 0 2px 1px 0 #d1d5eb;
 
   display: flex;
-  gap: 26px;
+  /* justify-content: space-around; */
 `;
 
 export const WrapImg = styled.div`
   width: 178px;
+  margin-right: 26px;
 `;
 
 export const Img = styled.img`
@@ -50,7 +51,6 @@ export const TextValue = styled.span`
 export const TextItem = styled.p`
   font-size: 12px;
   line-height: calc(15 / 12);
-  height: 30px;
 
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -66,5 +66,45 @@ export const WrapStatic = styled.div`
 
 export const Block = styled.div`
   display: flex;
+  align-items: center;
+  gap: 10px;
+`;
+
+export const ValuesWrp = styled.div`
+  /* display: flex; */
+  /* fle */
+`;
+
+export const Values = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 26px;
+  width: 326px;
+  height: 152px;
+  margin-bottom: 8px;
+`;
+
+export const RatingItem = styled.div`
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  text-align: center;
+`;
+
+export const ValuesTitle = styled.div`
+  font-size: 12px;
+  margin-top: 8px;
+  text-align: center;
+`;
+
+export const ValuesItem = styled.div`
+  font-size: 12px;
+  margin-top: 50px;
+  text-align: center;
+`;
+
+export const BlokBtn = styled.div`
+  display: flex;
+  justify-content: end;
   gap: 10px;
 `;
