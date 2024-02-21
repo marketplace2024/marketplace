@@ -12,8 +12,7 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import LanguageIcon from '@mui/icons-material/Language';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
-
-
+import { Container } from '../Container';
 
 export const Header = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -34,8 +33,6 @@ export const Header = () => {
     setAnchorEl(null);
     handleMobileMenuClose();
   };
-
-
 
   ////////////////////////
   //Desktop version start
@@ -66,7 +63,6 @@ export const Header = () => {
   //Desktop version end
   ////////////////////////
 
-
   ////////////////////////
   //Mobile version start
   ///////////////////////
@@ -88,7 +84,6 @@ export const Header = () => {
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
-      
       <MenuItem>
         <IconButton
           size="large"
@@ -121,82 +116,80 @@ export const Header = () => {
   //Mobile version end
   ///////////////////////
 
-
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
-    
-        <Toolbar>
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ display: { xs: 'none', sm: 'block' } }}
-            color='orange'
-          >
-            CURIO
-          </Typography>
-          
-          <Box sx={{ flexGrow: 1 }} />
-          <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-          <IconButton
-              size="large"
-              aria-label="show more"
-              aria-controls={mobileMenuId}
-              aria-haspopup="true"
-              style={{color: 'white'}}
+        <Container>
+          <Toolbar>
+            <Typography
+              variant="h6"
+              noWrap
+              component="div"
+              sx={{ display: { xs: 'none', sm: 'block' } }}
+              color="orange"
             >
-              <LanguageIcon />
-            </IconButton>
+              CURIO
+            </Typography>
 
-            <IconButton
-              size="large"
-              aria-label="show 17 new notifications"
-              style={{color: 'white'}}
-            >
-              <Badge badgeContent={17} color="error">
-                <NotificationsIcon />
-              </Badge>
-            </IconButton>
-            
-            <IconButton
-              size="large"
-              aria-label="show more"
-              aria-controls={mobileMenuId}
-              aria-haspopup="true"
-              style={{color: 'white'}}
-            >
-              <FavoriteBorderIcon />
-            </IconButton>
+            <Box sx={{ flexGrow: 1 }} />
+            <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
+              <IconButton
+                size="large"
+                aria-label="show more"
+                aria-controls={mobileMenuId}
+                aria-haspopup="true"
+                style={{ color: 'white' }}
+              >
+                <LanguageIcon />
+              </IconButton>
 
-            <IconButton
-              size="large"
-              aria-label="show more"
-              aria-controls={mobileMenuId}
-              aria-haspopup="false"
-              style={{color: 'white'}}
-            >
-              <ShoppingCartOutlinedIcon />
-            </IconButton>
-          
-            
-            <IconButton
-              size="large"
-              edge="end"
-              aria-label="account of current user"
-              aria-controls={menuId}
-              aria-haspopup="true"
-              onClick={handleProfileMenuOpen}
-              style={{color: 'white'}}
-            >
-              <AccountCircle />
-            </IconButton>
-          </Box>
-        </Toolbar>
+              <IconButton
+                size="large"
+                aria-label="show 17 new notifications"
+                style={{ color: 'white' }}
+              >
+                <Badge badgeContent={17} color="error">
+                  <NotificationsIcon />
+                </Badge>
+              </IconButton>
+
+              <IconButton
+                size="large"
+                aria-label="show more"
+                aria-controls={mobileMenuId}
+                aria-haspopup="true"
+                style={{ color: 'white' }}
+              >
+                <FavoriteBorderIcon />
+              </IconButton>
+
+              <IconButton
+                size="large"
+                aria-label="show more"
+                aria-controls={mobileMenuId}
+                aria-haspopup="false"
+                style={{ color: 'white' }}
+              >
+                <ShoppingCartOutlinedIcon />
+              </IconButton>
+
+              <IconButton
+                size="large"
+                edge="end"
+                aria-label="account of current user"
+                aria-controls={menuId}
+                aria-haspopup="true"
+                onClick={handleProfileMenuOpen}
+                style={{ color: 'white' }}
+              >
+                <AccountCircle />
+              </IconButton>
+            </Box>
+          </Toolbar>
+        </Container>
       </AppBar>
       {renderMobileMenu}
       {renderMenu}
     </Box>
-  );     
-  
+  );
 };
