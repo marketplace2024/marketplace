@@ -1,5 +1,6 @@
 // import { Tab } from '@mui/material';
 import Tab from '@mui/material/Tab';
+import Tabs from '@mui/material/Tabs';
 import TabList from '@mui/lab/TabList';
 import TabContext from '@mui/lab/TabContext';
 import { Box } from '@mui/material';
@@ -21,20 +22,26 @@ export const Advert = () => {
   return (
     <>
       <TabContext value={value}>
-        <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-          <TabList
+        <Box sx={{ borderBottom: 1, borderColor: '#FF6F00' }}>
+          <Tabs
             onChange={handleChange}
             aria-label="My Advertisements navigation"
+            sx={{
+              '& button:focus': {
+                border: '1px solid #FF6F00',
+                borderBottom: '1px solid black',
+                borderRadius: '4px 4px 0 0',
+                // top: '2px',
+                // zIndex: '100',
+              },
+            }}
           >
-            {/* <Link to="active"> */}
             <Tab label="Active" value="active" />
-            {/* </Link> */}
-
             <Tab label="Awaiting publications" value="awaiting" />
             <Tab label="On delivery" value="delivery" />
             <Tab label="Inactive" value="inactive" />
             <Tab label="Declined" value="declined" />
-          </TabList>
+          </Tabs>
         </Box>
         {/* <TabPanel value="1">Item One</TabPanel>
         <TabPanel value="2">Item Two</TabPanel>
